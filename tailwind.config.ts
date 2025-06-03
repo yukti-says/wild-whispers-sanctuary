@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -22,6 +21,7 @@ export default {
 			fontFamily: {
 				'inter': ['Inter', 'sans-serif'],
 				'playfair': ['Playfair Display', 'serif'],
+				'cinzel': ['Cinzel', 'serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
@@ -57,18 +57,18 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// Nature-inspired color palette
+				// Updated nature-inspired color palette with darker greens
 				forest: {
-					50: '#f0f9f0',
-					100: '#dcf2dc',
-					200: '#bce5bc',
-					300: '#8dd18d',
-					400: '#5cb85c',
-					500: '#3d8b3d',
-					600: '#2d6e2d',
-					700: '#255525',
-					800: '#1f431f',
-					900: '#1a381a',
+					50: '#0a1a0a',
+					100: '#0f2e0f',
+					200: '#1a4d1a',
+					300: '#1e5a1e',
+					400: '#226622',
+					500: '#2d7a2d',
+					600: '#1a5a1a',
+					700: '#0f4d0f',
+					800: '#0a3d0a',
+					900: '#051a05',
 				},
 				ocean: {
 					50: '#f0f9ff',
@@ -155,9 +155,9 @@ export default {
 				'stars-twinkle': 'stars-twinkle 4s ease-in-out infinite'
 			},
 			backgroundImage: {
-				'cosmic-gradient': 'radial-gradient(ellipse at center, #1a1a2e 0%, #16213e 35%, #0f0f23 100%)',
-				'aurora-gradient': 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-				'forest-gradient': 'linear-gradient(135deg, #2d5016 0%, #3d8b3d  50%, #5cb85c 100%)',
+				'cosmic-gradient': 'radial-gradient(ellipse at center, #051a05 0%, #0a3d0a 35%, #0f2e0f 100%)',
+				'aurora-gradient': 'linear-gradient(135deg, #1a5a1a 0%, #2d7a2d 100%)',
+				'forest-gradient': 'linear-gradient(135deg, #051a05 0%, #1a5a1a  50%, #2d7a2d 100%)',
 				'ocean-gradient': 'linear-gradient(135deg, #0c4a6e 0%, #0284c7 50%, #38bdf8 100%)',
 				'earth-gradient': 'linear-gradient(135deg, #5a4830 0%, #8b6d42 50%, #c8b079 100%)'
 			}

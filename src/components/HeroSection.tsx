@@ -22,11 +22,11 @@ const HeroSection = () => {
       <Globe3D />
       
       <div className={`text-center z-10 px-4 transition-all duration-2000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-        <h1 className="font-playfair text-6xl md:text-8xl font-bold text-white mb-6 leading-tight">
+        <h1 className="font-cinzel text-6xl md:text-8xl font-bold text-white mb-6 leading-tight tracking-wide">
           Wild<span className="text-forest-400">Whispers</span>
         </h1>
         
-        <p className="text-xl md:text-2xl text-gray-200 mb-4 max-w-2xl mx-auto">
+        <p className="text-xl md:text-2xl text-gray-200 mb-4 max-w-2xl mx-auto font-cinzel">
           A Journey Through Earth's Untamed Beauty
         </p>
         
