@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -21,6 +22,8 @@ export default {
 			fontFamily: {
 				'inter': ['Inter', 'sans-serif'],
 				'playfair': ['Playfair Display', 'serif'],
+				'libre': ['Libre Baskerville', 'serif'],
+				'poppins': ['Poppins', 'sans-serif'],
 				'cinzel': ['Cinzel', 'serif'],
 			},
 			colors: {
@@ -57,42 +60,90 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// Updated nature-inspired color palette with darker greens
+				// Unique organic nature-inspired color palette
+				moss: {
+					50: '#f4f7f1',
+					100: '#e9f0e3',
+					200: '#d3e2c8',
+					300: '#b5cfa2',
+					400: '#94b875',
+					500: '#6A994E', // Primary moss green
+					600: '#5a8142',
+					700: '#486636',
+					800: '#3a522e',
+					900: '#2f4427',
+				},
+				fern: {
+					50: '#f0f4f1',
+					100: '#dce8df',
+					200: '#b9d1c0',
+					300: '#8fb49b',
+					400: '#649374',
+					500: '#386641', // Primary fern
+					600: '#2e5235',
+					700: '#25412a',
+					800: '#1f3423',
+					900: '#1a2b1e',
+				},
 				forest: {
-					50: '#0a1a0a',
-					100: '#0f2e0f',
-					200: '#1a4d1a',
-					300: '#1e5a1e',
-					400: '#226622',
-					500: '#2d7a2d',
-					600: '#1a5a1a',
-					700: '#0f4d0f',
-					800: '#0a3d0a',
-					900: '#051a05',
+					50: '#f0f2f1',
+					100: '#dce5df',
+					200: '#b9cbc0',
+					300: '#8fa89b',
+					400: '#628172',
+					500: '#3e5f52',
+					600: '#2f4c42',
+					700: '#243c35',
+					800: '#1e312b',
+					900: '#1B4332', // Deep forest green
 				},
-				ocean: {
-					50: '#f0f9ff',
-					100: '#e0f2fe',
-					200: '#bae6fd',
-					300: '#7dd3fc',
-					400: '#38bdf8',
-					500: '#0ea5e9',
-					600: '#0284c7',
-					700: '#0369a1',
-					800: '#075985',
-					900: '#0c4a6e',
+				ochre: {
+					50: '#faf9f6',
+					100: '#f2f0ea',
+					200: '#e6e1d4',
+					300: '#d6cdb9',
+					400: '#c4b695',
+					500: '#B5A36A', // Earthy ochre
+					600: '#a38d5a',
+					700: '#87734b',
+					800: '#6e5e40',
+					900: '#594f36',
 				},
-				earth: {
-					50: '#faf8f3',
-					100: '#f4f0e6',
-					200: '#e8ddc7',
-					300: '#d8c7a1',
-					400: '#c8b079',
-					500: '#b8995a',
-					600: '#a8844e',
-					700: '#8b6d42',
-					800: '#6f5939',
-					900: '#5a4830',
+				teal: {
+					50: '#f0fdfb',
+					100: '#ccfbf1',
+					200: '#99f6e4',
+					300: '#5eead4',
+					400: '#2dd4bf',
+					500: '#2A9D8F', // Ocean teal
+					600: '#0f766e',
+					700: '#0d5d56',
+					800: '#134e4a',
+					900: '#134e4a',
+				},
+				clay: {
+					50: '#fdfcfa',
+					100: '#f9f6f0',
+					200: '#f2ede1',
+					300: '#e8e0cf',
+					400: '#ddd0b8',
+					500: '#D9CBA3', // Soft clay
+					600: '#c4b287',
+					700: '#a8956a',
+					800: '#8a7c58',
+					900: '#70674a',
+				},
+				mist: {
+					50: '#F0F7F4', // Mist white
+					100: '#f8fbf9',
+					200: '#f1f6f3',
+					300: '#e8f1ec',
+					400: '#dce8e1',
+					500: '#c9d9d0',
+					600: '#a7bfaf',
+					700: '#7f9d8a',
+					800: '#5f7a6a',
+					900: '#4a6054',
 				},
 				cosmic: {
 					50: '#faf7ff',
@@ -135,31 +186,45 @@ export default {
 				},
 				'float': {
 					'0%, 100%': { transform: 'translateY(0px)' },
-					'50%': { transform: 'translateY(-10px)' }
+					'50%': { transform: 'translateY(-15px)' }
 				},
 				'pulse-glow': {
-					'0%, 100%': { opacity: '0.5', transform: 'scale(1)' },
-					'50%': { opacity: '0.8', transform: 'scale(1.05)' }
+					'0%, 100%': { opacity: '0.6', transform: 'scale(1)' },
+					'50%': { opacity: '1', transform: 'scale(1.1)' }
 				},
 				'stars-twinkle': {
-					'0%, 100%': { opacity: '0.3' },
+					'0%, 100%': { opacity: '0.4' },
 					'50%': { opacity: '1' }
+				},
+				'ripple': {
+					'0%': { transform: 'scale(1)', opacity: '1' },
+					'100%': { transform: 'scale(1.4)', opacity: '0' }
+				},
+				'breath': {
+					'0%, 100%': { transform: 'scale(1)' },
+					'50%': { transform: 'scale(1.05)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
-				'globe-rotate': 'globe-rotate 30s linear infinite',
-				'float': 'float 3s ease-in-out infinite',
-				'pulse-glow': 'pulse-glow 2s ease-in-out infinite',
-				'stars-twinkle': 'stars-twinkle 4s ease-in-out infinite'
+				'globe-rotate': 'globe-rotate 40s linear infinite',
+				'float': 'float 4s ease-in-out infinite',
+				'pulse-glow': 'pulse-glow 3s ease-in-out infinite',
+				'stars-twinkle': 'stars-twinkle 5s ease-in-out infinite',
+				'ripple': 'ripple 0.6s ease-out',
+				'breath': 'breath 6s ease-in-out infinite'
 			},
 			backgroundImage: {
-				'cosmic-gradient': 'radial-gradient(ellipse at center, #051a05 0%, #0a3d0a 35%, #0f2e0f 100%)',
-				'aurora-gradient': 'linear-gradient(135deg, #1a5a1a 0%, #2d7a2d 100%)',
-				'forest-gradient': 'linear-gradient(135deg, #051a05 0%, #1a5a1a  50%, #2d7a2d 100%)',
-				'ocean-gradient': 'linear-gradient(135deg, #0c4a6e 0%, #0284c7 50%, #38bdf8 100%)',
-				'earth-gradient': 'linear-gradient(135deg, #5a4830 0%, #8b6d42 50%, #c8b079 100%)'
+				'jungle-mist': 'radial-gradient(ellipse at center, #1B4332 0%, #386641 35%, #6A994E 70%, #2A9D8F 100%)',
+				'aurora-organic': 'linear-gradient(135deg, #6A994E 0%, #2A9D8F 50%, #B5A36A 100%)',
+				'forest-gradient': 'linear-gradient(135deg, #1B4332 0%, #386641 40%, #6A994E 80%, #2A9D8F 100%)',
+				'ocean-gradient': 'linear-gradient(135deg, #2A9D8F 0%, #386641 50%, #6A994E 100%)',
+				'earth-gradient': 'linear-gradient(135deg, #B5A36A 0%, #D9CBA3 50%, #F0F7F4 100%)',
+				'savanna-gradient': 'linear-gradient(135deg, #B5A36A 0%, #D9CBA3 40%, #6A994E 100%)'
+			},
+			backdropBlur: {
+				'xs': '2px',
 			}
 		}
 	},
