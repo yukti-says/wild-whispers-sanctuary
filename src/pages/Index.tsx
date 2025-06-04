@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import CosmicBackground from '../components/CosmicBackground';
 import NavigationBar from '../components/NavigationBar';
@@ -23,7 +22,7 @@ const Index = () => {
     return () => window.removeEventListener('scroll', updateScrollProgress);
   }, []);
 
-  // Enhanced biome data with new organic color scheme
+  // Enhanced biome data with animal images
   const biomeSections = [
     {
       title: "African Savanna",
@@ -37,7 +36,8 @@ const Index = () => {
           status: "Vulnerable",
           funFact: "A lion's roar can be heard from up to 5 miles away, serving as a powerful communication tool across the vast savanna. Their calls create a symphony that echoes through the African night.",
           statusColor: "bg-yellow-500",
-          habitatIcon: "🌾"
+          habitatIcon: "🌾",
+          imageUrl: "https://images.unsplash.com/photo-1472396961693-142e6e269027?w=400&h=300&fit=crop"
         },
         {
           name: "African Elephant",
@@ -45,7 +45,8 @@ const Index = () => {
           status: "Endangered",
           funFact: "Elephants have incredible memories spanning decades and can recognize the bones of their deceased family members, often returning to visit them in touching ceremonies of remembrance.",
           statusColor: "bg-red-500",
-          habitatIcon: "🐘"
+          habitatIcon: "🐘",
+          imageUrl: "https://images.unsplash.com/photo-1493962853295-0fd70327578a?w=400&h=300&fit=crop"
         },
         {
           name: "Cheetah",
@@ -53,7 +54,8 @@ const Index = () => {
           status: "Vulnerable",
           funFact: "Cheetahs can accelerate from 0 to 60 mph in just 3 seconds, making them nature's sports car. Their hearts beat up to 250 times per minute during a chase.",
           statusColor: "bg-yellow-500",
-          habitatIcon: "⚡"
+          habitatIcon: "⚡",
+          imageUrl: "https://images.unsplash.com/photo-1466721591366-2d5fba72006d?w=400&h=300&fit=crop"
         }
       ]
     },
@@ -69,7 +71,8 @@ const Index = () => {
           status: "Least Concern",
           funFact: "Humpback whales compose complex songs that can last up to 30 minutes and travel across entire ocean basins. Each population has its own unique dialect, like underwater cultures.",
           statusColor: "bg-green-500",
-          habitatIcon: "🌊"
+          habitatIcon: "🌊",
+          imageUrl: "https://images.unsplash.com/photo-1518877593221-1f28583780b4?w=400&h=300&fit=crop"
         },
         {
           name: "Great White Shark",
@@ -77,7 +80,8 @@ const Index = () => {
           status: "Vulnerable",
           funFact: "Great whites can detect a single drop of blood in 25 gallons of water and sense electrical fields from other animals' heartbeats, making them living sensors of the sea.",
           statusColor: "bg-yellow-500",
-          habitatIcon: "⚡"
+          habitatIcon: "⚡",
+          imageUrl: "https://images.unsplash.com/photo-1441057206919-63d19fac2369?w=400&h=300&fit=crop"
         },
         {
           name: "Sea Turtle",
@@ -85,7 +89,8 @@ const Index = () => {
           status: "Endangered",
           funFact: "Sea turtles navigate using Earth's magnetic field like a natural GPS and can return to the exact beach where they were born decades later to lay their own eggs.",
           statusColor: "bg-red-500",
-          habitatIcon: "🧭"
+          habitatIcon: "🧭",
+          imageUrl: "https://images.unsplash.com/photo-1439886183900-e79ec0057170?w=400&h=300&fit=crop"
         }
       ]
     },
@@ -101,7 +106,8 @@ const Index = () => {
           status: "Near Threatened",
           funFact: "Jaguars have the strongest bite force of any big cat and are excellent swimmers, often hunting caimans in rivers. They're known as 'yaguareté' - 'the true beast' by indigenous peoples.",
           statusColor: "bg-orange-500",
-          habitatIcon: "🌿"
+          habitatIcon: "🌿",
+          imageUrl: "https://images.unsplash.com/photo-1535268647677-300dbf3d78d1?w=400&h=300&fit=crop"
         },
         {
           name: "Scarlet Macaw",
@@ -109,7 +115,8 @@ const Index = () => {
           status: "Least Concern",
           funFact: "Scarlet macaws can live over 50 years and form lifelong partnerships, often seen flying together in synchronized flight. They can learn over 100 words and understand context.",
           statusColor: "bg-green-500",
-          habitatIcon: "🌳"
+          habitatIcon: "🌳",
+          imageUrl: "https://images.unsplash.com/photo-1501286353178-1ec881214838?w=400&h=300&fit=crop"
         },
         {
           name: "Poison Dart Frog",
@@ -117,7 +124,8 @@ const Index = () => {
           status: "Various",
           funFact: "Their brilliant colors warn predators of their toxicity, with some species carrying enough poison to kill 10 adult humans. Indigenous peoples have used their toxins for hunting arrows for centuries.",
           statusColor: "bg-blue-500",
-          habitatIcon: "🍃"
+          habitatIcon: "🍃",
+          imageUrl: "https://images.unsplash.com/photo-1498936178812-4b2e558d2937?w=400&h=300&fit=crop"
         }
       ]
     }

@@ -41,13 +41,25 @@ const BiomeCard: React.FC<BiomeCardProps> = ({
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="flex items-start justify-between mb-6">
-        <div className="flex items-center gap-3">
+      {/* Animal Image */}
+      {imageUrl && (
+        <div className="mb-6 relative overflow-hidden rounded-2xl">
+          <img 
+            src={imageUrl} 
+            alt={name}
+            className="w-full h-48 object-cover transition-transform duration-700 hover:scale-110"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-forest-900/50 to-transparent" />
           {habitatIcon && (
-            <div className="text-2xl animate-breath">
+            <div className="absolute top-4 right-4 text-2xl animate-breath bg-mist-50/20 backdrop-blur-sm rounded-full p-2">
               {habitatIcon}
             </div>
           )}
+        </div>
+      )}
+
+      <div className="flex items-start justify-between mb-6">
+        <div className="flex items-center gap-3">
           <h3 className="font-playfair text-2xl font-bold text-text-dark cinematic-text">{name}</h3>
         </div>
         <div className={`w-4 h-4 rounded-full ${statusColor} animate-pulse-glow shadow-lg`}></div>
