@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -24,7 +23,8 @@ export default {
 				'playfair': ['Playfair Display', 'serif'],
 				'libre': ['Libre Baskerville', 'serif'],
 				'poppins': ['Poppins', 'sans-serif'],
-				'cinzel': ['Cinzel', 'serif'],
+				'crimson': ['Crimson Text', 'serif'],
+				'merriweather': ['Merriweather', 'serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
@@ -60,13 +60,13 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// Unique organic nature-inspired color palette
+				// Enhanced organic nature-inspired color palette with better contrast
 				moss: {
-					50: '#f4f7f1',
-					100: '#e9f0e3',
-					200: '#d3e2c8',
-					300: '#b5cfa2',
-					400: '#94b875',
+					50: '#f7f9f5',
+					100: '#eef3ea',
+					200: '#dde8d6',
+					300: '#c5d4b8',
+					400: '#a8bd95',
 					500: '#6A994E', // Primary moss green
 					600: '#5a8142',
 					700: '#486636',
@@ -74,11 +74,11 @@ export default {
 					900: '#2f4427',
 				},
 				fern: {
-					50: '#f0f4f1',
-					100: '#dce8df',
-					200: '#b9d1c0',
-					300: '#8fb49b',
-					400: '#649374',
+					50: '#f3f6f4',
+					100: '#e6ece8',
+					200: '#cddad2',
+					300: '#abb9b2',
+					400: '#83958c',
 					500: '#386641', // Primary fern
 					600: '#2e5235',
 					700: '#25412a',
@@ -86,23 +86,23 @@ export default {
 					900: '#1a2b1e',
 				},
 				forest: {
-					50: '#f0f2f1',
-					100: '#dce5df',
-					200: '#b9cbc0',
-					300: '#8fa89b',
-					400: '#628172',
-					500: '#3e5f52',
-					600: '#2f4c42',
-					700: '#243c35',
-					800: '#1e312b',
+					50: '#f2f4f3',
+					100: '#e4e9e6',
+					200: '#cad3ce',
+					300: '#a8b5ae',
+					400: '#7f918a',
+					500: '#5e7169',
+					600: '#4a5a54',
+					700: '#3d4946',
+					800: '#333c3a',
 					900: '#1B4332', // Deep forest green
 				},
 				ochre: {
-					50: '#faf9f6',
-					100: '#f2f0ea',
-					200: '#e6e1d4',
-					300: '#d6cdb9',
-					400: '#c4b695',
+					50: '#fdfcf9',
+					100: '#f8f5ef',
+					200: '#f0eadd',
+					300: '#e5dcc5',
+					400: '#d8c9a6',
 					500: '#B5A36A', // Earthy ochre
 					600: '#a38d5a',
 					700: '#87734b',
@@ -110,23 +110,23 @@ export default {
 					900: '#594f36',
 				},
 				teal: {
-					50: '#f0fdfb',
-					100: '#ccfbf1',
-					200: '#99f6e4',
-					300: '#5eead4',
-					400: '#2dd4bf',
+					50: '#f2fcfb',
+					100: '#d6f6f3',
+					200: '#afede8',
+					300: '#7dddd9',
+					400: '#4cc4c6',
 					500: '#2A9D8F', // Ocean teal
-					600: '#0f766e',
-					700: '#0d5d56',
-					800: '#134e4a',
-					900: '#134e4a',
+					600: '#237f74',
+					700: '#1f675f',
+					800: '#1c524d',
+					900: '#1a4440',
 				},
 				clay: {
-					50: '#fdfcfa',
-					100: '#f9f6f0',
-					200: '#f2ede1',
-					300: '#e8e0cf',
-					400: '#ddd0b8',
+					50: '#fefdfb',
+					100: '#fcf9f4',
+					200: '#f7f1e7',
+					300: '#f0e5d4',
+					400: '#e6d6bc',
 					500: '#D9CBA3', // Soft clay
 					600: '#c4b287',
 					700: '#a8956a',
@@ -135,27 +135,23 @@ export default {
 				},
 				mist: {
 					50: '#F0F7F4', // Mist white
-					100: '#f8fbf9',
-					200: '#f1f6f3',
-					300: '#e8f1ec',
-					400: '#dce8e1',
-					500: '#c9d9d0',
-					600: '#a7bfaf',
-					700: '#7f9d8a',
-					800: '#5f7a6a',
-					900: '#4a6054',
+					100: '#fbfcfb',
+					200: '#f6f9f7',
+					300: '#eff4f1',
+					400: '#e4ebe7',
+					500: '#d4ddd7',
+					600: '#b8c4bc',
+					700: '#93a498',
+					800: '#6f817a',
+					900: '#586862',
 				},
-				cosmic: {
-					50: '#faf7ff',
-					100: '#f3efff',
-					200: '#e9e2ff',
-					300: '#d8c8ff',
-					400: '#c0a1ff',
-					500: '#a474ff',
-					600: '#8b4cf7',
-					700: '#7c3aed',
-					800: '#6d28d9',
-					900: '#581c87',
+				// Enhanced text colors for better contrast
+				text: {
+					dark: '#1a2e1a',
+					primary: '#2d3e2d',
+					secondary: '#4a5d4a',
+					muted: '#6b7c6b',
+					light: '#8b9c8b',
 				}
 			},
 			borderRadius: {

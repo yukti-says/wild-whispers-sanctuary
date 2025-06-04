@@ -155,16 +155,16 @@ const Index = () => {
           <h3 className="font-playfair text-5xl font-bold text-mist-50 mb-8 cinematic-text">
             Continue Your Wild Journey
           </h3>
-          <p className="text-mist-200/90 text-xl mb-12 max-w-3xl mx-auto font-libre leading-relaxed">
+          <p className="text-text-secondary text-xl mb-12 max-w-3xl mx-auto font-merriweather leading-relaxed">
             Join millions of nature lovers in protecting and celebrating Earth's incredible biodiversity. 
             Every click, every share, every moment of wonder contributes to conservation.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
-            <button className="glassmorphic-enhanced px-10 py-5 text-mist-50 hover:bg-moss-500/30 transition-all duration-500 transform hover:scale-110 hover-glow font-libre font-semibold text-lg">
+            <button className="glassmorphic-enhanced px-10 py-5 text-text-dark hover:bg-moss-500/30 transition-all duration-500 transform hover:scale-110 hover-glow font-merriweather font-bold text-lg">
               Explore More Biomes
             </button>
-            <button className="glassmorphic-enhanced px-10 py-5 text-mist-50 hover:bg-teal-500/30 transition-all duration-500 transform hover:scale-110 hover-glow font-libre font-semibold text-lg">
+            <button className="glassmorphic-enhanced px-10 py-5 text-text-dark hover:bg-teal-500/30 transition-all duration-500 transform hover:scale-110 hover-glow font-merriweather font-bold text-lg">
               Support Conservation
             </button>
           </div>

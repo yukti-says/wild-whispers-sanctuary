@@ -84,10 +84,10 @@ const BiomeSection: React.FC<BiomeSectionProps> = ({
       <div className="relative z-10 container mx-auto px-6 py-20">
         <div className={`text-center mb-20 transition-all duration-1200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="text-8xl mb-8 animate-float filter drop-shadow-lg">{emoji}</div>
-          <h2 className="font-playfair text-5xl md:text-8xl font-bold text-mist-50 mb-8 cinematic-text">
+          <h2 className="font-playfair text-5xl md:text-8xl font-bold text-text-dark mb-8 cinematic-text">
             {title}
           </h2>
-          <p className="text-xl md:text-2xl text-mist-100/90 max-w-4xl mx-auto leading-relaxed font-libre italic">
+          <p className="text-xl md:text-2xl text-text-primary max-w-4xl mx-auto leading-relaxed font-merriweather italic font-medium">
             {description}
           </p>
         </div>
@@ -113,10 +113,10 @@ const BiomeSection: React.FC<BiomeSectionProps> = ({
 
         {/* Enhanced interactive elements */}
         <div className="mt-20 text-center">
-          <button className="glassmorphic-enhanced px-12 py-6 text-mist-50 hover:bg-moss-500/30 transition-all duration-500 transform hover:scale-110 hover-glow group ripple-effect">
-            <span className="flex items-center gap-3 font-libre font-semibold text-lg">
+          <button className="glassmorphic-enhanced px-12 py-6 text-text-dark hover:bg-moss-500/30 transition-all duration-500 transform hover:scale-110 hover-glow group ripple-effect">
+            <span className="flex items-center gap-3 font-merriweather font-bold text-lg">
               Explore More {title}
-              <span className="group-hover:animate-bounce text-moss-400 text-xl">→</span>
+              <span className="group-hover:animate-bounce text-moss-600 text-xl">→</span>
             </span>
           </button>
         </div>

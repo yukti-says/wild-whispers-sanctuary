@@ -48,26 +48,26 @@ const BiomeCard: React.FC<BiomeCardProps> = ({
               {habitatIcon}
             </div>
           )}
-          <h3 className="font-playfair text-2xl font-bold text-mist-50 cinematic-text">{name}</h3>
+          <h3 className="font-playfair text-2xl font-bold text-text-dark cinematic-text">{name}</h3>
         </div>
         <div className={`w-4 h-4 rounded-full ${statusColor} animate-pulse-glow shadow-lg`}></div>
       </div>
 
       <div className="space-y-4">
-        <div className="flex items-center gap-3 text-mist-200/90">
-          <MapPin className="w-5 h-5 text-teal-400 animate-pulse" />
+        <div className="flex items-center gap-3 text-text-secondary">
+          <MapPin className="w-5 h-5 text-teal-600 animate-pulse" />
           <span className="text-sm font-poppins font-medium">{location}</span>
         </div>
 
         <div className="flex items-center gap-3">
-          <Heart className="w-5 h-5 text-red-400 animate-pulse" />
-          <span className="text-sm text-mist-200/90 font-poppins">
-            Status: <span className="font-semibold text-mist-50">{status}</span>
+          <Heart className="w-5 h-5 text-red-500 animate-pulse" />
+          <span className="text-sm text-text-secondary font-poppins">
+            Status: <span className="font-semibold text-text-primary">{status}</span>
           </span>
         </div>
 
         <div className="bg-forest-900/30 backdrop-blur-sm p-4 rounded-xl border border-mist-200/20">
-          <p className="text-mist-200/90 text-sm leading-relaxed font-poppins">
+          <p className="text-text-secondary text-sm leading-relaxed font-poppins">
             <span className="text-lg mr-2">💡</span>
             {funFact}
           </p>
